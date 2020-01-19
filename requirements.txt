@@ -1,0 +1,8 @@
+Click==7.0
+poium==0.5.2
+pytest==5.3.2
+pytest-html==2.0.1
+pytest-metadata==1.8.0
+pytest-rerunfailures==8.0
+selenium==3.141.0
+
