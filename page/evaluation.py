@@ -3,6 +3,8 @@ import random
 import time
 
 class Evaluationpage(Page):
+    #介绍页
+    join_loc = PageElement(xpath='//*[@id="root"]/div/div/div[2]/div[3]/a/span')
     #选择年级
     grades = PageElements(xpath = '//*[@id="root"]/div/div/ul/li')
     #下一步
@@ -13,6 +15,10 @@ class Evaluationpage(Page):
     selects_loc = PageElements(xpath = '//*[@id="root"]/div/div/div[2]/div[2]/div')
     #提交按钮
     commit_loc = PageElement(xpath = '//*[@id="root"]/div/div/div[4]/a/span')
+
+
+    def start(self):
+        self.join_loc.click()
 
     def first_step(self):
         grade = random.choice(self.grades)
@@ -26,4 +32,3 @@ class Evaluationpage(Page):
             select.click()
             time.sleep(3)
         self.commit_loc.click()
-
