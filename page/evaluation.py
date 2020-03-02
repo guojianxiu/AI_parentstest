@@ -3,6 +3,7 @@ import random
 import time
 
 class Evaluationpage(Page):
+    #智能测评
     #介绍页
     join_loc = PageElement(xpath='//*[@id="root"]/div/div/div[2]/div[3]/a/span')
     #选择年级

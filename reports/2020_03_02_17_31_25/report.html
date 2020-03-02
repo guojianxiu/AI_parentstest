@@ -405,7 +405,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 19-Jan-2020 at 14:09:31 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 02-Mar-2020 at 17:31:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -424,8 +424,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.2</td></tr></table>
     <h2>Summary</h2>
-    <p>0 tests ran in 14.95 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>1 tests ran in 28.18 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">1 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -435,4 +435,34 @@ function filter_table(elem) {
           <th>Description</th>
           <th class="sortable numeric" col="duration">Duration</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testcase/test_demo.py::TestDemo::test_login</td>
+          <td>
+            <html>
+              <head>
+                <meta name="Content-Type" value="text/html; charset=latin1"/></head>
+              <body>
+                <p>录</p></body></html></td>
+          <td class="col-duration">4.43</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="image/test_demo.py_TestDemo_test_login.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;testcase.test_demo.TestDemo object at 0x0000028D1EF05D30&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;d370ca26a5eff4f0a5536d296e77fc65&quot;)&gt;<br/><br/>    def test_login(self,browser):<br/>        &quot;&quot;&quot;登录&quot;&quot;&quot;<br/>&gt;       self.login_page = Loginpage(browser).login(&#x27;955194&#x27;, &#x27;jia1234567@&#x27;).redirect()<br/><span class="error">E       AttributeError: &#x27;Mainpage&#x27; object has no attribute &#x27;redirect&#x27;</span><br/><br/>testcase\test_demo.py:10: AttributeError<br/></div></td></tr></tbody>
+      <tbody class="rerun results-table-row">
+        <tr>
+          <td class="col-result">Rerun</td>
+          <td class="col-name">testcase/test_demo.py::TestDemo::test_login</td>
+          <td>
+            <html>
+              <head>
+                <meta name="Content-Type" value="text/html; charset=latin1"/></head>
+              <body>
+                <p>录</p></body></html></td>
+          <td class="col-duration">3.53</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div><div><img src="image/test_demo.py_TestDemo_test_login.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;testcase.test_demo.TestDemo object at 0x0000028D1EC8D400&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;f5addeee93f3738305483c5482bb3a46&quot;)&gt;<br/><br/>    def test_login(self,browser):<br/>        &quot;&quot;&quot;登录&quot;&quot;&quot;<br/>&gt;       self.login_page = Loginpage(browser).login(&#x27;955194&#x27;, &#x27;jia1234567@&#x27;).redirect()<br/><span class="error">E       AttributeError: &#x27;Mainpage&#x27; object has no attribute &#x27;redirect&#x27;</span><br/><br/>testcase\test_demo.py:10: AttributeError<br/></div></td></tr></tbody></table></body></html>
