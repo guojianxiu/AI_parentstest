@@ -1,5 +1,3 @@
-
-
 import pytest
 from page.login import Loginpage
 from util.MysqlUtil import MysqlUtil
@@ -17,15 +15,10 @@ class TestEvaluation():
         try:
             # 执行sql语句
             cursor.execute(ai_order_info)
-            db.commit()
             cursor.execute(ai_member_info)
-            db.commit()
             cursor.execute(ai_user_test_result)
-            db.commit()
             cursor.execute(ai_user_test_paper)
-            db.commit()
             cursor.execute(ai_user_test_report)
-            db.commit()
             cursor.execute(ai_student_plan)
             db.commit()
             print('更新数据成功！')

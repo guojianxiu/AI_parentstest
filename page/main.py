@@ -1,7 +1,7 @@
 
 from poium import Page, PageElement,PageElements
 from page.evaluation import Evaluationpage
-import time
+from page.result import Resultpage
 
 class Mainpage(Page):
     #引导页
@@ -13,7 +13,7 @@ class Mainpage(Page):
     '''
     Ai乐学主要可以保留得页面有：
     介绍页：http://webapp.leke.cn/leke-ai-h5/#/homePage?newtab=1&close=1
-    测评结果页：http://webapp.leke.cn/leke-ai-h5/#/result
+    测评结果页：http://webapp.leke.cn/leke-ai-h5/#/result?newtab=1&close=1
     续费页面：http://webapp.leke.cn/leke-ai-h5/#/order?newtab=1&close=1
     操作页：http://webapp.leke.cn/leke-ai-h5/#/operation?newtab=1&close=1
     乐学报告页：http://webapp.leke.cn/leke-ai-h5/#/report?newtab=1&close=1
@@ -24,6 +24,9 @@ class Mainpage(Page):
         self.get('http://webapp.leke.cn/leke-ai-h5/#/homePage?newtab=1&close=1')
         return Evaluationpage(self.driver)
 
+    def result(self):
+        self.get('http://webapp.leke.cn/leke-ai-h5/#/result?newtab=1&close=1')
+        return Resultpage(self.driver)
 
 
 

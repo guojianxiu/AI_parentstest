@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="test-guojianxiu" name="pytest" skipped="0" tests="1" time="28.175" timestamp="2020-03-02T17:31:25.466583"><testcase classname="testcase.test_demo.TestDemo" file="testcase\test_demo.py" line="7" name="test_login" time="24.181"><failure message="AttributeError: &apos;Mainpage&apos; object has no attribute &apos;redirect&apos;">self = &lt;testcase.test_demo.TestDemo object at 0x0000028D1EF05D30&gt;
-browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;d370ca26a5eff4f0a5536d296e77fc65&quot;)&gt;
-
-    def test_login(self,browser):
-        &quot;&quot;&quot;登录&quot;&quot;&quot;
-&gt;       self.login_page = Loginpage(browser).login(&apos;955194&apos;, &apos;jia1234567@&apos;).redirect()
-E       AttributeError: &apos;Mainpage&apos; object has no attribute &apos;redirect&apos;
-
-testcase\test_demo.py:10: AttributeError</failure></testcase></testsuite></testsuites>

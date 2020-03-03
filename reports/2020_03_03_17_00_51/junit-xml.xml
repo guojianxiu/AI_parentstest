@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="test-guojianxiu" name="pytest" skipped="0" tests="3" time="261.847" timestamp="2020-03-03T17:00:51.792918"><testcase classname="testcase.test_demo.TestDemo" file="testcase\test_demo.py" line="7" name="test_login" time="21.058"></testcase><testcase classname="testcase.test_evaluation.TestEvaluation" file="testcase\test_evaluation.py" line="5" name="test_update_data" time="7.250"></testcase><testcase classname="testcase.test_evaluation.TestEvaluation" file="testcase\test_evaluation.py" line="32" name="test_evaluation" time="123.496"><failure message="AttributeError: &apos;NoneType&apos; object has no attribute &apos;click&apos;">self = &lt;testcase.test_evaluation.TestEvaluation object at 0x0000026D09C10898&gt;
+browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;3cd86fba24787fd0d57d4ef525574582&quot;)&gt;
+
+    def test_evaluation(self,browser):
+        self.evaluation_page = Loginpage(browser).login(&apos;955194&apos;, &apos;jia1234567@&apos;).evaluation()
+        self.evaluation_page.start()
+        self.evaluation_page.first_step()
+&gt;       self.evaluation_page.second_step()
+
+testcase\test_evaluation.py:37: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;page.evaluation.Evaluationpage object at 0x0000026D09C10588&gt;
+
+    def second_step(self):
+        for i in range(20):
+            select = random.choice(self.selects_loc)
+            select.click()
+        Evaluationpage(self.driver)
+&gt;       self.commit_loc.click()
+E       AttributeError: &apos;NoneType&apos; object has no attribute &apos;click&apos;
+
+page\evaluation.py:32: AttributeError</failure></testcase></testsuite></testsuites>
