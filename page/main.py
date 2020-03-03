@@ -20,10 +20,9 @@ class Mainpage(Page):
     '''
 
     def evaluation(self):
-        #从介绍页进入完成智能测评
+        #从介绍页进入智能测评
         self.get('http://webapp.leke.cn/leke-ai-h5/#/homePage?newtab=1&close=1')
-        pass
-        #return Evaluationpage(self.driver)
+        return Evaluationpage(self.driver)
 
 
 

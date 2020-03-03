@@ -15,7 +15,7 @@ class Evaluationpage(Page):
     #题目选项
     selects_loc = PageElements(xpath = '//*[@id="root"]/div/div/div[2]/div[2]/div')
     #提交按钮
-    commit_loc = PageElement(xpath = '//*[@id="root"]/div/div/div[4]/a/span')
+    commit_loc = PageElement(xpath = '//*[@id="root"]/div/div/div[4]/a')
 
 
     def start(self):
@@ -29,7 +29,12 @@ class Evaluationpage(Page):
 
     def second_step(self):
         for i in range(int(self.count.text)):
-            select = random.choice(self.selects_loc)
-            select.click()
+            print(self.selects_loc)
             time.sleep(3)
-        self.commit_loc.click()
+            select = random.choice(self.selects_loc)
+            print(select)
+            select.click()
+            print('我选择了哦！')
+            time.sleep(3)
+        #self.commit_loc = PageElement(xpath = '//*[@id="root"]/div/div/div[4]/a')
+        #self.commit_loc.click()

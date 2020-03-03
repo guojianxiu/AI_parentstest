@@ -12,15 +12,20 @@ class TestEvaluation():
         ai_user_test_paper = 'update ai_user_test_paper set is_deleted = 1 where parent_id = 850826;'
         ai_user_test_report = 'update ai_user_test_report set is_deleted = 1 where parent_id = 850826;'
         ai_student_plan = 'update ai_student_plan set is_deleted = 1 where parent_id = 850826;'
-        db = MysqlUtil.getConnect()
+        db = MysqlUtil.getConnect(self)
         cursor = db.cursor()
         try:
             # 执行sql语句
             cursor.execute(ai_order_info)
+            db.commit()
             cursor.execute(ai_member_info)
+            db.commit()
             cursor.execute(ai_user_test_result)
+            db.commit()
             cursor.execute(ai_user_test_paper)
+            db.commit()
             cursor.execute(ai_user_test_report)
+            db.commit()
             cursor.execute(ai_student_plan)
             db.commit()
             print('更新数据成功！')
@@ -29,11 +34,14 @@ class TestEvaluation():
             db.rollback()
         finally:
             # 最终关闭数据库连接
-            print("数据库连接关闭！")
             db.close()
+            print("数据库连接关闭！")
 
     def test_evaluation(self,browser):
         self.evaluation_page = Loginpage(browser).login('955194', 'jia1234567@').evaluation()
+        self.evaluation_page.start()
+        self.evaluation_page.first_step()
+        self.evaluation_page.second_step()
 
 if __name__ == '__main__':
     pytest.main(["-v", "-s", "test_evaluation.py"])

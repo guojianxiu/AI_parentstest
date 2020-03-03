@@ -18,6 +18,6 @@ class Loginpage(Page):
         self.password_loc = password
         self.login_loc.click()
         self.get("http://webapp.leke.cn/leke-ai-h5/#/redirect?studentId=850818")
-        time.sleep(20)
+        time.sleep(5)
         return Mainpage(self.driver)
 
