@@ -15,6 +15,6 @@ class Adjustplanpage(Page):
         grade = random.choice(self.grades)
         grade.click()
         for i in range(len(self.active)):
-            i.click()
+            self.active[0].click()
         random.sample(self.abilities, 2)
         self.confirm_loc.click()

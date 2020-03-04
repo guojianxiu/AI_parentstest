@@ -14,9 +14,12 @@ class Mainpage(Page):
     Ai乐学主要可以保留得页面有：
     介绍页：http://webapp.leke.cn/leke-ai-h5/#/homePage?newtab=1&close=1
     测评结果页：http://webapp.leke.cn/leke-ai-h5/#/result?newtab=1&close=1
+    重新测评：http://webapp.leke.cn/leke-ai-h5/#/measurement/index
+    调整计划：http://webapp.leke.cn/leke-ai-h5/#/plan
     续费页面：http://webapp.leke.cn/leke-ai-h5/#/order?newtab=1&close=1
     操作页：http://webapp.leke.cn/leke-ai-h5/#/operation?newtab=1&close=1
     乐学报告页：http://webapp.leke.cn/leke-ai-h5/#/report?newtab=1&close=1
+    
     '''
 
     def evaluation(self):
@@ -27,7 +30,3 @@ class Mainpage(Page):
     def result(self):
         self.get('http://webapp.leke.cn/leke-ai-h5/#/result?newtab=1&close=1')
         return Resultpage(self.driver)
-
-
-
-

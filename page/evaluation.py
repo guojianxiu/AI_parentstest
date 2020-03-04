@@ -29,6 +29,5 @@ class Evaluationpage(Page):
             time.sleep(1)
             select = random.choice(self.selects_loc)
             select.click()
-
         Evaluationpage(self.driver)
         self.commit_loc.click()
