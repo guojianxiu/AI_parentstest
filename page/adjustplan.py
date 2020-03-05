@@ -1,5 +1,6 @@
 from poium import Page, PageElement, PageElements
 import random
+import time
 
 class Adjustplanpage(Page):
     #年级
@@ -16,5 +17,7 @@ class Adjustplanpage(Page):
         grade.click()
         for i in range(len(self.active)):
             self.active[0].click()
-        random.sample(self.abilities, 2)
+        ability = random.sample(self.abilities, 2)
+        ability[0].click()
+        ability[1].click()
         self.confirm_loc.click()

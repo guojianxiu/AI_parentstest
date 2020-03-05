@@ -20,11 +20,10 @@ class Resultpage(Page):
 
     def adjustplan(self):
         Resultpage(self.driver)
-        time.sleep(5)
         self.adjust_loc.click()
         time.sleep(5)
         Adjustplanpage(self.driver).adjust()
 
     def open(self):
-        #Resultpage(self.driver)
+        Resultpage(self.driver)
         self.open_loc.click()

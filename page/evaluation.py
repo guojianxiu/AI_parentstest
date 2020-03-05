@@ -19,6 +19,7 @@ class Evaluationpage(Page):
         self.join_loc.click()
 
     def first_step(self):
+        time.sleep(5)
         grade = random.choice(self.grades)
         grade.click()
         time.sleep(1)

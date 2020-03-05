@@ -405,7 +405,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 04-Mar-2020 at 16:47:14 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <p>Report generated on 05-Mar-2020 at 10:47:17 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -424,8 +424,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.2</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 114.08 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">1 rerun</span>
+    <p>4 tests ran in 202.71 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">1 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -439,23 +439,23 @@ function filter_table(elem) {
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
-          <td class="col-name">testcase/test_evaluation.py::TestEvaluation::test_evaluation</td>
+          <td class="col-name">testcase/test_result.py::TestResult::test_result</td>
           <td>No case description</td>
-          <td class="col-duration">22.48</td></tr>
+          <td class="col-duration">60.73</td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="image/test_evaluation.py_TestEvaluation_test_evaluation.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;testcase.test_evaluation.TestEvaluation object at 0x000002207BF60B00&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;241d2f670d245793d2cb7ae491567b31&quot;)&gt;<br/><br/>    def test_evaluation(self,browser):<br/>        self.evaluation_page = Loginpage(browser).login(&#x27;955194&#x27;, &#x27;jia1234567@&#x27;).evaluation()<br/>        self.evaluation_page.start()<br/>&gt;       self.evaluation_page.first_step()<br/><br/>testcase\test_evaluation.py:36: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>page\evaluation.py:22: in first_step<br/>    grade = random.choice(self.grades)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;random.Random object at 0x000002207BF17CD8&gt;, seq = []<br/><br/>    def choice(self, seq):<br/>        &quot;&quot;&quot;Choose a random element from a non-empty sequence.&quot;&quot;&quot;<br/>        try:<br/>            i = self._randbelow(len(seq))<br/>        except ValueError:<br/>&gt;           raise IndexError(&#x27;Cannot choose from an empty sequence&#x27;) from None<br/><span class="error">E           IndexError: Cannot choose from an empty sequence</span><br/><br/>D:\Python\lib\random.py:261: IndexError<br/></div></td></tr></tbody>
+            <div><div><img src="image/test_result.py_TestResult_test_result.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;testcase.test_result.TestResult object at 0x0000023B3FE50A90&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;cf4ea5aff6738a862d331376b28ea0a2&quot;)&gt;<br/><br/>    def test_result(self,browser):<br/>        self.result_page = Loginpage(browser).login(&#x27;955194&#x27;, &#x27;jia1234567@&#x27;).result()<br/>        self.result_page.reevaluation()<br/>&gt;       self.result_page.adjustplan()<br/><br/>testcase\test_result.py:9: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>page\result.py:26: in adjustplan<br/>    Adjustplanpage(self.driver).adjust()<br/>page\adjustplan.py:15: in adjust<br/>    grade = random.choice(self.grades)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;random.Random object at 0x0000023B3FE00AF8&gt;, seq = []<br/><br/>    def choice(self, seq):<br/>        &quot;&quot;&quot;Choose a random element from a non-empty sequence.&quot;&quot;&quot;<br/>        try:<br/>            i = self._randbelow(len(seq))<br/>        except ValueError:<br/>&gt;           raise IndexError(&#x27;Cannot choose from an empty sequence&#x27;) from None<br/><span class="error">E           IndexError: Cannot choose from an empty sequence</span><br/><br/>D:\Python\lib\random.py:261: IndexError<br/></div></td></tr></tbody>
       <tbody class="rerun results-table-row">
         <tr>
           <td class="col-result">Rerun</td>
-          <td class="col-name">testcase/test_evaluation.py::TestEvaluation::test_evaluation</td>
+          <td class="col-name">testcase/test_result.py::TestResult::test_result</td>
           <td>No case description</td>
-          <td class="col-duration">25.93</td></tr>
+          <td class="col-duration">59.77</td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div><div><img src="image/test_evaluation.py_TestEvaluation_test_evaluation.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;testcase.test_evaluation.TestEvaluation object at 0x000002207D715550&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;b9a81be27986999fb63258c016a10e25&quot;)&gt;<br/><br/>    def test_evaluation(self,browser):<br/>        self.evaluation_page = Loginpage(browser).login(&#x27;955194&#x27;, &#x27;jia1234567@&#x27;).evaluation()<br/>        self.evaluation_page.start()<br/>&gt;       self.evaluation_page.first_step()<br/><br/>testcase\test_evaluation.py:36: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>page\evaluation.py:22: in first_step<br/>    grade = random.choice(self.grades)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;random.Random object at 0x000002207BF17CD8&gt;, seq = []<br/><br/>    def choice(self, seq):<br/>        &quot;&quot;&quot;Choose a random element from a non-empty sequence.&quot;&quot;&quot;<br/>        try:<br/>            i = self._randbelow(len(seq))<br/>        except ValueError:<br/>&gt;           raise IndexError(&#x27;Cannot choose from an empty sequence&#x27;) from None<br/><span class="error">E           IndexError: Cannot choose from an empty sequence</span><br/><br/>D:\Python\lib\random.py:261: IndexError<br/></div></td></tr></tbody>
+            <div><div><img src="image/test_result.py_TestResult_test_result.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
+            <div class="log">self = &lt;testcase.test_result.TestResult object at 0x0000023B41636D68&gt;<br/>browser = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;4324d50d2b2bdd9559ec362431a530ec&quot;)&gt;<br/><br/>    def test_result(self,browser):<br/>        self.result_page = Loginpage(browser).login(&#x27;955194&#x27;, &#x27;jia1234567@&#x27;).result()<br/>        self.result_page.reevaluation()<br/>&gt;       self.result_page.adjustplan()<br/><br/>testcase\test_result.py:9: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/>page\result.py:26: in adjustplan<br/>    Adjustplanpage(self.driver).adjust()<br/>page\adjustplan.py:15: in adjust<br/>    grade = random.choice(self.grades)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _<br/><br/>self = &lt;random.Random object at 0x0000023B3FE00AF8&gt;, seq = []<br/><br/>    def choice(self, seq):<br/>        &quot;&quot;&quot;Choose a random element from a non-empty sequence.&quot;&quot;&quot;<br/>        try:<br/>            i = self._randbelow(len(seq))<br/>        except ValueError:<br/>&gt;           raise IndexError(&#x27;Cannot choose from an empty sequence&#x27;) from None<br/><span class="error">E           IndexError: Cannot choose from an empty sequence</span><br/><br/>D:\Python\lib\random.py:261: IndexError<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
@@ -466,7 +466,7 @@ function filter_table(elem) {
                 <meta name="Content-Type" value="text/html; charset=latin1"/></head>
               <body>
                 <p>录</p></body></html></td>
-          <td class="col-duration">20.31</td></tr>
+          <td class="col-duration">8.68</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="empty log">No log output captured.</div></td></tr></tbody>
@@ -475,7 +475,16 @@ function filter_table(elem) {
           <td class="col-result">Passed</td>
           <td class="col-name">testcase/test_evaluation.py::TestEvaluation::test_update_data</td>
           <td>No case description</td>
-          <td class="col-duration">16.45</td></tr>
+          <td class="col-duration">0.02</td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcase/test_evaluation.py::TestEvaluation::test_evaluation</td>
+          <td>No case description</td>
+          <td class="col-duration">37.68</td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
