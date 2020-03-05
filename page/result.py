@@ -1,6 +1,7 @@
 from poium import Page, PageElement
 from page.evaluation import Evaluationpage
 from page.adjustplan import Adjustplanpage
+from page.topay import Topaypage
 import time
 
 class Resultpage(Page):
@@ -20,6 +21,7 @@ class Resultpage(Page):
 
     def adjustplan(self):
         Resultpage(self.driver)
+        time.sleep(3)
         self.adjust_loc.click()
         time.sleep(5)
         Adjustplanpage(self.driver).adjust()
@@ -27,3 +29,5 @@ class Resultpage(Page):
     def open(self):
         Resultpage(self.driver)
         self.open_loc.click()
+        time.sleep(3)
+        Topaypage(self.driver).topay()
