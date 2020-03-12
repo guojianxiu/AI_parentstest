@@ -1,5 +1,3 @@
-
-
 import pytest
 from page.login import Loginpage
 
