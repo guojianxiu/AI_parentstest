@@ -4,6 +4,10 @@ from util.MysqlUtil import MysqlUtil
 
 class TestEvaluation():
     def test_update_data(self):
+        '''
+        将目前已有计划数据逻辑删除
+        :return:
+        '''
         ai_order_info = 'update ai_order_info set is_deleted = 1 WHERE parent_id = 850826;'
         ai_member_info = 'update ai_member_info set is_deleted = 1 where parent_id = 850826;'
         ai_user_test_result = 'update ai_user_test_result set is_deleted = 1 where created_by = 850826;'
@@ -31,6 +35,11 @@ class TestEvaluation():
             print("数据库连接关闭！")
 
     def test_evaluation(self,browser):
+        '''
+        执行智能测评第一步第二步
+        :param browser:
+        :return:
+        '''
         self.evaluation_page = Loginpage(browser).login('955194', 'jia1234567@').evaluation()
         self.evaluation_page.start()
         self.evaluation_page.first_step()

@@ -13,6 +13,7 @@ class Mainpage(Page):
     changeplan_loc = PageElement(link_text = '调整计划')
 
     def continue_pay(self):
+        Mainpage(self.driver)
         if self.continue_loc:
             Topaypage(self.driver).topay()
 
@@ -32,6 +33,7 @@ class Mainpage(Page):
         return Operationpage(self.driver)
 
     def report(self):
+        Mainpage(self.driver)
         if self.nextplan_loc:
             self.changeplan_loc.click()
             Adjustplanpage(self.driver).adjust()

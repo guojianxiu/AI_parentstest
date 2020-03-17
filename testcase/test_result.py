@@ -4,12 +4,21 @@ from util.MysqlUtil import MysqlUtil
 class TestResult():
 
     def test_result(self,browser):
+        '''
+        测试结果页、重新测评、调整计划、开启乐学
+        :param browser:
+        :return:
+        '''
         self.result_page = Loginpage(browser).login('955194', 'jia1234567@').result()
         self.result_page.reevaluation()
         self.result_page.adjustplan()
         self.result_page.open()
 
     def test_revertdata(self):
+        '''
+        数据更新，将此次测试用例得执行数据物理删除
+        :return:
+        '''
         d_ai_order_info = 'delete from ai_order_info where parent_id = 850826 and is_deleted = 0;'
         d_ai_member_info = 'delete from ai_member_info where parent_id = 850826 and is_deleted = 0;'
         d_ai_user_test_result = 'DELETE FROM ai_user_test_result WHERE created_by = 850826 and is_deleted = 0;'
